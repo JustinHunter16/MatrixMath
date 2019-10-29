@@ -16,7 +16,14 @@ public class MatrixMath
     public MatrixMath(int[][] data)
     {
         // initialise instance variables
-       
+        this.data = new int[data.length][data[0].length];
+        for(int row=0; row<data.length; row++)
+        {
+            for(int column=0; column<data[row].length; column++)
+            {
+                this.data[row][column] = data[row][column];
+            }
+        }
     }
 
     /**
@@ -27,7 +34,17 @@ public class MatrixMath
      */
     public int[] rowSum()
     {
-        return null;
+        int[] sumArray = new int[data.length];
+        for(int row=0; row<data.length; row++)
+        {
+            int sum = 0;
+            for(int column=0; column<data[row].length; column++)
+            {
+                sum += data[row][column];
+            }
+            sumArray[row] = sum;
+        }
+        return sumArray;
     }
     
         /**
@@ -37,7 +54,12 @@ public class MatrixMath
      */
     public double[] rowAve()
     {
-        return null;
+        double average[] = new double[data.length];
+        for(int i=0; i<data.length; i++)
+        {
+            average[i] =(1.0)*rowSum()[i]/data[i].length;
+        }
+        return average;
     }
     
         /**
@@ -48,7 +70,17 @@ public class MatrixMath
      */
     public int[] colSum()
     {
-        return null;
+        int[] sumArray = new int[data[0].length];
+        for(int column=0; column<data[0].length; column++)
+        {
+            int sum = 0;
+            for(int row=0; row<data.length; row++)
+            {
+                sum += data[row][column];
+            }
+            sumArray[column] = sum;
+        }
+        return sumArray;
     }
     
      /**
@@ -58,7 +90,11 @@ public class MatrixMath
      */
     public double[] colAve()
     {
-        return null;
+        double[] average = new double[data[0].length];
+        for(int i=0; i<data[0].length; i++)
+        {
+            average[i] = (1.0)*colSum()[i]/data.length;
+        }
+        return average;
     }
-    
 }

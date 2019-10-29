@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=MatrixMath
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ MatrixMath\ here.\r\n\r\n\ @author\ (\ Mr.\ Kim)\r\n\ @version\ ((October\ 28.\ 1029)\r\n
+comment1.params=data
+comment1.target=MatrixMath(int[][])
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ MatrixMath\r\n
+comment2.params=
+comment2.target=int[]\ rowSum()
+comment2.text=\r\n\ Find\ the\ sum\ of\ all\ the\ elements\ in\ each\ row.\r\n\ \r\n\r\n\ @return\ \ \ \ int[]\r\n
+comment3.params=
+comment3.target=double[]\ rowAve()
+comment3.text=\r\n\ Find\ the\ average\ of\ all\ the\ values\ in\ each\ row\r\n\r\n\ @return\ \ \ \ int[]\ \r\n
+comment4.params=
+comment4.target=int[]\ colSum()
+comment4.text=\r\n\ Find\ the\ sum\ of\ all\ the\ numbers\ in\ column\r\n\ \r\n\r\n\ @return\ \ \ \ int[]\ \r\n
+comment5.params=
+comment5.target=double[]\ colAve()
+comment5.text=\r\n\ Find\ the\ average\ of\ all\ the\ values\ in\ each\ row\r\n\r\n\ @return\ \ \ \ int[]\ \r\n
+numComments=6
